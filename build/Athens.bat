@@ -1,1 +1,1 @@
-RabiesSDL.exe config\simulation_source_atenas.txt
+RabiesSDL.exe config\simulation_source_athens.txt
