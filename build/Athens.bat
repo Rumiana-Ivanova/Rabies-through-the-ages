@@ -1,0 +1,1 @@
+RabiesSDL.exe config\simulation_source_atenas.txt
