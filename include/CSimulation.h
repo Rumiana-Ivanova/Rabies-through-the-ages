@@ -32,7 +32,7 @@ class CSimulation
         virtual ~CSimulation();
 
         void load(string file_name);
-        void load_map(string file_name);
+        void load_map();
         void print(ostream& file);
         void initialization(SDL_Renderer* pRendered);  ///добави случайно генериране на начални координати
         void update();  ///преместването
@@ -54,7 +54,9 @@ class CSimulation
         int infection_range;                    ///the radius of the circle from witch the disease is transmittable
 
         int era;
+        string file_map;
         bool pictures;
+        bool hydrophobia;
         int ticks_per_day;
         int human_incubation_period;
         int human_incubation_period_fluctuation;
