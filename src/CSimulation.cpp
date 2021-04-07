@@ -112,17 +112,21 @@ void CSimulation::load(string file_name) {
     file >> temp_name;
     file >> era;
     file >> temp_name;
+    file >> file_map;
+    file >> temp_name;
     file >> pictures;
+    file >> temp_name;
+    file >> hydrophobia;
 
     size = size_horizontal * size_vertical;
 
 }
 
-void CSimulation::load_map(string file_name) {
+void CSimulation::load_map() {
 
-    ifstream file(file_name, std::ifstream::binary);
+    ifstream file(("img\\" + file_map + ".tga"), std::ifstream::binary);
     if (!file.is_open()) { 
-        cout << "Can't open the file: " << file_name;
+        cout << "Can't open the file: " << file_map;
     }
   
     char header[18];

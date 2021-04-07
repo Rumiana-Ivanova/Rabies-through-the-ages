@@ -90,7 +90,7 @@ void CInfected_wild_animal::choose_direction(CActor* actor) {
         for (int i = -1; i < 2; i++) {
             for (int j = -1; j < 2; j++) {
                 tile = actor->get_x_current() + i + (actor->get_y_current() + j) * actor->m_simulation->size_horizontal;
-                if (actor->m_simulation->map[tile] == 'w') {
+                if (actor->m_simulation->map[tile] == 'w' && (actor->m_simulation->hydrophobia)) {
                     return;
                 }
             }
