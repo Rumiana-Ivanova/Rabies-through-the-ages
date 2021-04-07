@@ -31,5 +31,6 @@ animals_death_time_fluctuation 2
 animals_infection_rate 77
 infection_range 1
 era(Antiquity_ClassicalAntiquity_ModernDay) 1
-pictures(0-off_1-on) 0
-
+map_file(.tga) babylon_102x102
+pictures(0-off_1-on) 1
+hydrophobia(0-off_1-on) 1
